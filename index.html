@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <style>
+        /* Reset margin dan padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body untuk keseluruhan halaman */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Section Hero */
+        .hero {
+            height: 100vh; /* Pastikan section memenuhi layar penuh */
+            background: url('background-image.jpg') no-repeat center center/cover; /* Gambar background responsif */
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        /* Heading 1 */
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        /* Subjudul */
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        /* Gambar PNG di pojok kanan bawah */
+        .hero img {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 150px; /* Ukuran gambar */
+        }
+
+        /* Responsif untuk perangkat mobile */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hero img {
+                width: 100px; /* Ukuran gambar lebih kecil di mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Section Hero -->
+    <section class="hero">
+        <div>
+            <h1>Welcome to Arimbi Website!</h1>
+            <p>Semoga Sesuai Dengan Apa Yang Anda Inginkan.</p>
+        </div>
+        <img src="logo.png..JPG" alt="LOGO PNG">
+    </section>
+
+</body>
+</html>
